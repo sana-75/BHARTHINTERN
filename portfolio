@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#profile summary">profile summary</a></li>
+        <li><a href="#education">education</a></li>
+        <li><a href="#courese and certifications">courses and certifications</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="profile summary">
+    <h2>profile summary</h2>
+    <p>Seeking an entery-level opportunity with an esteemed organization where i can utilize my skills 
+        and enhance learning in the field of work Capable of mastering new technologies
+    <section id="education">
+    <h2>education</h2>
+     <p>BE-from mvsr COLLEGE
+        1-10 from siddhartha in 2019 with 90%
+        11-12 from Narayana junior collage.
+    <section id="courses and certifications">
+        <h2>courses and certifications</h2>
+        <p>.software Engineering
+            .AIML
+            .AWS cloud
+    <section id="skills">
+        <h2>skills</h2>
+         <p>c,python,java,html  </p>
+  </section>
+  
+  <section id="project">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <h3>Project 1:-CHATBOT USING AWS LEX</h3>
+        <p>Chatbot can be described as software that can chat with people using artificial intelligence. 
+            These software are used to perform tasks such as quickly responding to users, informing them, 
+            helping to purchase products and providing better service to customers. In this paper,
+            we present the general working principle and the basic concepts of artificial intelligence based
+            chatbots and related concepts as well as their applications in various sectors such as telecommunication,
+            banking, health, customer call center and e-commerce. Additionally, the results of an example chatbot for 
+            donation service developed for telecommunication service provider are presented using the proposed architecture.</p>
+    </ul>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: sanabegum200312@gmail.com</p>
+    <p>Phone: xxxxxxxx</p>
+  </section>
+  
+  <footer>
+    <p>&copy;sk.sana begum</p>
+  </footer>
+</body>
+</html>
