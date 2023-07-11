@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .converter {
+      margin-top: 50px;
+    }
+
+    .input-field {
+      margin-bottom: 20px;
+    }
+
+    .input-field label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-field input {
+      width: 200px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .result {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Temperature Converter</h1>
+
+  <div class="converter">
+    <div class="input-field">
+      <label for="celsius">Celsius</label>
+      <input type="number" id="celsius" placeholder="Enter temperature in Celsius" step="0.01">
+    </div>
+
+    <div class="input-field">
+      <label for="fahrenheit">Fahrenheit</label>
+      <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit" step="0.01">
+    </div>
+
+    <div class="input-field">
+      <label for="kelvin">Kelvin</label>
+      <input type="number" id="kelvin" placeholder="Enter temperature in Kelvin" step="0.01">
+    </div>
+
+    <button onclick="convertTemperatures()">Convert</button>
+
+    <div class="result">
+      <p><strong>Result:</strong></p>
+      <p><span id="celsiusResult"></span> Celsius</p>
+      <p><span id="fahrenheitResult"></span> Fahrenheit</p>
+      <p><span id="kelvinResult"></span> Kelvin</p>
+    </div>
+  </div>
+
+  <script>
+    function convertTemperatures() {
+      var celsius = parseFloat(document.getElementById('celsius').value);
+      var fahrenheit = parseFloat(document.getElementById('fahrenheit').value);
+      var kelvin = parseFloat(document.getElementById('kelvin').value);
+
+      if (!isNaN(celsius)) {
+        var fahrenheitResult = (celsius * 9/5) + 32;
+        var kelvinResult = celsius + 273.15;
+        document.getElementById('celsiusResult').textContent = celsius.toFixed(2);
+        document.getElementById('fahrenheitResult').textContent = fahrenheitResult.toFixed(2);
+        document.getElementById('kelvinResult').textContent = kelvinResult.toFixed(2);
+      }
+
+      if (!isNaN(fahrenheit)) {
+        var celsiusResult = (fahrenheit - 32) * 5/9;
+        var kelvinResult = (fahrenheit + 459.67) * 5/9;
+        document.getElementById('celsiusResult').textContent = celsiusResult.toFixed(2);
+        document.getElementById('fahrenheitResult').textContent = fahrenheit.toFixed(2);
+        document.getElementById('kelvinResult').textContent = kelvinResult.toFixed(2);
+      }
+
+      if (!isNaN(kelvin)) {
+        var celsiusResult = kelvin - 273.15;
+        var fahrenheitResult = (kelvin * 9/5) - 459.67;
+        document.getElementById('celsiusResult').textContent = celsiusResult.toFixed(2);
+        document.getElementById('fahrenheitResult').textContent = fahrenheitResult.toFixed(2);
+        document.getElementById('kelvinResult').textContent = kelvin.toFixed(2);
+      }
+    }
+  </script>
+</body>
+</html>
